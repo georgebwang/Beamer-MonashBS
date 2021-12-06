@@ -1,0 +1,60 @@
+\mode<presentation>
+
+% Logo - Monash Uni and Monash Business School combined
+\pgfdeclareimage[width=20ex,interpolate=true]{monash}{monash/monashlogo}%
+\pgfdeclareimage[width=35ex,interpolate=false]{monbs}{monash/uniandbs}%
+\titlegraphic{\pgfuseimage{monbs}}%
+
+% Colours 
+\setbeamercolor{section in head/foot}{parent=palette primary}
+\setbeamercolor{subsection in head/foot}{parent=palette secondary}
+
+\setbeamercolor{author in head/foot}{parent=footerfont}
+\setbeamercolor{title in head/foot}{parent=subsection in head/foot}
+
+\setbeamercolor{date in head/foot}{parent=footerfont}
+
+\setbeamercolor{frametitle}{parent=section in head/foot}
+\setbeamercolor{frametitle right}{parent=palette primary}
+
+
+% Footer
+\defbeamertemplate*{footline}{infolines theme}
+{%
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,leftskip=2ex,rightskip=2ex,sep=0pt]{footer}%
+    \hfill%
+    \usebeamercolor[fg]{footerfont}%
+    \usebeamerfont{footerfont}%
+    \insertshortauthor%
+    \hfill%
+    \usebeamercolor[fg]{footerfont}%
+    \usebeamerfont{footerfont}%
+    \usebeamertemplate{footerfont}%
+    \insertpagenumber
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+
+% Header - I think it's better to have no header, but infolines headers are commented out below :)
+
+\iffalse
+\defbeamertemplate*{headline}{infolines theme}
+{%
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.65ex,dp=1.5ex,right]{section in head/foot}%
+    \usebeamerfont{section in head/foot}\insertsectionhead\hspace*{2ex}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.65ex,dp=1.5ex,left]{subsection in head/foot}%
+    \usebeamerfont{subsection in head/foot}\hspace*{2ex}\insertsubsectionhead
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\fi
+
+
+\mode
+<all>

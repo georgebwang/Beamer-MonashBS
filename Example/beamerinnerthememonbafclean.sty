@@ -1,0 +1,24 @@
+\DeclareOptionBeamer{shadow}[true]{\def\beamer@themerounded@shadow{#1}}
+\ExecuteOptionsBeamer{shadow=false}
+\ProcessOptionsBeamer
+
+\mode<presentation>
+
+
+
+% TOC
+\setbeamertemplate{section in toc}[square]
+\setbeamertemplate{subsection in toc}[square]
+
+% Itemize & Enumerate
+\setbeamertemplate{itemize item}{\color{monashblue!65!black}$\blacktriangleright$}
+\setbeamertemplate{itemize subitem}{\color{monashblue!50!monashgrey}$\blacktriangleright$}
+\setbeamertemplate{itemize subsubitem}{\color{gray}$\blacktriangleright$}
+\setbeamertemplate{enumerate items}[circle]
+
+% Title Page
+\setbeamertemplate{title page}[default][colsep=-4bp,rounded=true,shadow=\beamer@themerounded@shadow]
+
+
+\mode
+<all>
