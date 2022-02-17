@@ -17,17 +17,24 @@
 \setbeamercolor{frametitle}{parent=section in head/foot}
 \setbeamercolor{frametitle right}{parent=palette primary}
 
+% Frame Title
+\setbeamertemplate{frametitle}{%
+    \nointerlineskip%
+    \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1ex]{frametitle}
+        \hspace*{1ex}\insertframetitle%
+    \end{beamercolorbox}%
+}
 
 % Footer
 \defbeamertemplate*{footline}{infolines theme}
 {%
   \leavevmode%
   \hbox{%
-  \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,leftskip=2ex,rightskip=2ex,sep=0pt]{footer}%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.2ex,dp=0.7ex,leftskip=2ex,rightskip=2ex,sep=0pt]{footer}%
     \hfill%
     \usebeamercolor[fg]{footerfont}%
     \usebeamerfont{footerfont}%
-    \insertshortauthor%
+    \insertshorttitle%
     \hfill%
     \usebeamercolor[fg]{footerfont}%
     \usebeamerfont{footerfont}%

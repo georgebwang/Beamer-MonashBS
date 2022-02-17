@@ -1,6 +1,6 @@
 # Clean Beamer Theme for MonashBS
 
-This is a self-made *unofficial* LaTeX Beamer theme for Monash Business School Department of Banking and Finance, and a cleaner version of [my previously-made theme](https://github.com/georgebwang/Beamer-Monash-BaF). 
+This is a self-made unofficial LaTeX Beamer theme for Monash Business School Department of Banking and Finance. 
 
 ## Example
 
@@ -15,11 +15,11 @@ Alternatively, please see the screenshots below:
 
 ## Usage
 
-For a one-time use, simply copy all the files & directories in the `MonashBS-Clean` into the folder where your `.tex` file is located at.
+For a one-time use, simply copy all the files & directories in the `MonashBS` into the folder where your `.tex` file is located at.
 
-To conveniently allow for repetitive usage, copy the whole folder `MonashBS-Clean` into your `texmf/tex/latex` folder (which should have all the user-installed LaTeX packages). The actual location depends on how you installed LaTeX as well as your operating system, on my Linux machine the path is just `~/texmf/tex/latex` (i.e., in my home directory). If the path does not exist, manually creating those directories will work.
+To conveniently allow for repetitive usage, copy the whole folder `MonashBS` into your `texmf/tex/latex` folder (which should have all the user-installed LaTeX packages). The actual location depends on how you installed LaTeX as well as your operating system, on my Linux machine the path is just `~/texmf/tex/latex` (i.e., in my home directory). If the path does not exist, manually creating those directories will work.
 
-In your `.tex` file, add `\usetheme{monbafclean}` to the preamble to use the theme. 
+In your `.tex` file, add `\usetheme{monbs}` to the preamble to use the theme. 
 
 ## About the Design
 

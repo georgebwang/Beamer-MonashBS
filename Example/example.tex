@@ -1,10 +1,10 @@
 \documentclass[t]{beamer} % 't' makes the body top-justified instead of vertically centered
 
-\usetheme{monbafclean}
+\usetheme{monbs}
 
-\title[Short title]{Full Title}
-\subtitle{Subtitle is displayed here}
-\author[Short Author Name]{Full Author Name}
+\title[Footer - put anything (or nothing) here]{Why is \LaTeX \ Beamer so Powerful?}
+\subtitle{Evidence from Template Customization...}
+\author[Short Author Name]{Author/Presenter Names}
 \institute[Monash Uni]{Department of Banking and Finance, Monash Business School}
 \date{\today}
 
@@ -13,8 +13,8 @@
 \begin{frame}
   \titlepage
 \end{frame}
- 
-\begin{frame}{Table of Contents}
+
+\begin{frame}{Agenda}
   \tableofcontents
 \end{frame}
 
@@ -23,20 +23,20 @@
 
 \subsection{Sub-section 1-1}
 
-\begin{frame}{Frame Title}
+\begin{frame}{Our First Slide}
   Hello World!
-\vspace{\baselineskip}
-\vspace{\baselineskip}
+  \vspace{\baselineskip}
+  \vspace{\baselineskip}
 
   \begin{itemize}
     \item Item 1
     \item Item 2
-    \begin{itemize} 
-      \item Sub-item 1
-      \begin{itemize}
-        \item Sub-sub-item 1
-      \end{itemize}
-    \end{itemize}
+          \begin{itemize}
+            \item Sub-item 1
+                  \begin{itemize}
+                    \item Sub-sub-item 1
+                  \end{itemize}
+          \end{itemize}
   \end{itemize}
 
   \begin{enumerate}
@@ -47,21 +47,31 @@
 
 \section{Section 2}
 \subsection{Sub-section 2-1}
-\begin{frame}{We're now in Section 2}
-  \textbf{Hello again!} 
-  
-  \underline{Some maths notation:}
+\begin{frame}{Our Second Slide}
+  \textbf{Hello again!}
+
+  \hrulefill
+
+  Some maths notation:
   $$ p_t=\mathbb{E}_t(m_{t+1}x_{t+1}) $$
 
-  \textit{A picture:}
-  
+  \hrulefill
+
+  Regression: (clearly an endogenous setup...)
+  $$ Finance = \beta_0 + \beta_1Asset\ Pricing + \beta_2Corporate\
+    Finance + \varepsilon $$
+
+  \hrulefill
+
+  A random picture:
+
   \medskip
-  
+
   \centering\includegraphics[width=10cm]{figures/monash-banner.jpg}
 \end{frame}
 
 \begin{frame}{Some Blocks...}
-  \begin{block}{A Block}
+  \begin{block}{A Normal Block}
     This is a block.
   \end{block}
 
@@ -70,7 +80,7 @@
   \end{exampleblock}
 
   \begin{alertblock}{An Alerted Block}
-    Another one ...
+    Another one...
   \end{alertblock}
 \end{frame}
 
