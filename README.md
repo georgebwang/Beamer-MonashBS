@@ -25,5 +25,5 @@ In your `.tex` file, add `\usetheme{monbs}` to the preamble to use the theme.
 
 - The Colour Theme: The main colour tone is obviously (Monash) Blue, the exact colour code of which is referenced from [here](https://www.monash.edu/__data/assets/pdf_file/0004/1656508/9.-Digital-Guidelines.pdf). 
 - The Inner Theme: I think the default inner theme is not cool enough so I customised the inner theme to my liking - notably, the `itemize` items now have triangle symbols. 
-- The Outer Theme: This theme has a minimal outer-theme design - there is not much feature in the frame title, and the footer only has the short author name and the frame number with Monash blue as the background colour. *'Clean'* is the key word for this theme. 
+- The Outer Theme: This theme has a minimal but elegant outer-theme design - the frame title features Monash blue as the background colour and I made the height of frame title smaller than default to reserve space for the body; the footer only has the short title name in the centre and the frame number on the far right, with Monash blue as the background colour. 
 - The Font Theme: The text font theme is helvetica, and the maths font theme is newtx, both of which in my opinion look nicer than the default.
