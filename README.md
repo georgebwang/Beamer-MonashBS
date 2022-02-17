@@ -1,4 +1,4 @@
-# Clean Beamer Theme for MonashBS
+# Custom Monash LaTeX Beamer Theme
 
 This is a self-made unofficial LaTeX Beamer theme for Monash Business School Department of Banking and Finance. 
 
