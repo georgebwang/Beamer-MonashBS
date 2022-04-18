@@ -2,6 +2,8 @@
 
 This is a self-made unofficial LaTeX Beamer theme for Monash Business School Department of Banking and Finance. 
 
+*Update:* I've created a cleaner version of the theme and put it into the `Cleaner` branch, free feel to check it out. 
+
 ## Example
 
 Please see the `Example` folder for a minimal working example ([PDF](Example/example.pdf)).
