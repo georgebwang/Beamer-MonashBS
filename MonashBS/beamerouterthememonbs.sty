@@ -1,7 +1,7 @@
 \mode<presentation>
 
 % Logo - Monash Uni and Monash Business School combined
-\pgfdeclareimage[width=35ex,interpolate=false]{monbs}{monash/uniandbs}%
+\pgfdeclareimage[width=25ex,interpolate=false]{monbs}{monash/uniandbs}%
 \titlegraphic{\pgfuseimage{monbs}}%
 
 % Colours 
@@ -19,8 +19,8 @@
 % Frame Title
 \setbeamertemplate{frametitle}{%
     \nointerlineskip%
-    \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1ex]{frametitle}
-        \hspace*{1ex}\insertframetitle%
+    \begin{beamercolorbox}[wd=\paperwidth,ht=2.2ex,dp=1ex]{frametitle}
+        \hfill\insertframetitle\hspace*{1ex}%
     \end{beamercolorbox}%
 }
 
@@ -38,10 +38,11 @@
     \usebeamercolor[fg]{footerfont}%
     \usebeamerfont{footerfont}%
     \usebeamertemplate{footerfont}%
-    \insertframenumber
+    < \insertframenumber\ / \inserttotalframenumber\ >
   \end{beamercolorbox}}%
   \vskip0pt%
 }
+
 
 
 % Header - I think it's better to have no header, but infolines headers are commented out below :)

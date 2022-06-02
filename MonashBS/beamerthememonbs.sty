@@ -1,4 +1,4 @@
-\ProvidesPackage{beamerthememonbs}[202/02/17]
+\ProvidesPackage{beamerthememonbs}[2022/06/03]
 
 \mode<presentation>
 
@@ -11,8 +11,16 @@
 
 % Font package
 \usefonttheme{professionalfonts}
-\usepackage{stix2}
+\usepackage{fourier}
 \usepackage[scaled]{helvet}
+
+% Extra packages
+\usepackage[font=scriptsize,labelfont=bf]{caption}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage[backend=biber,style=apa,doi=false,annotation=false]{biblatex}
+\usepackage{booktabs}
+\usepackage{ulem} % strikethrough text
 
 % Fonts
 \setbeamerfont{title}{series=\mdseries}
@@ -41,6 +49,23 @@
 \setbeamertemplate{caption}[numbered]
 
 % set the text to be transparent when pausing
-\setbeamercovered{transparent}
+%\setbeamercovered{transparent}
+
+% script size bibliography
+\AtBeginBibliography{\scriptsize}
+
+% citations no comma in between --> make it neater 
+\renewcommand{\nameyeardelim}{\space}
+\renewcommand{\postnotedelim}{\space}
+
+
+% NEW COMMANDS. -----------------------------------------------------------------
+\newcommand{\red}{\textcolor{red}} % command for red text
+\newcommand*\diff{\mathop{}\!\mathrm{d}} % `d` in differentials 
+
+
+% SET MARGINS. -----------------------------------------------------------------
+\setbeamersize{text margin left=0.75cm, text margin right=0.75cm}
+\setlength{\leftmargini}{0.75cm}
 
 \mode<all>

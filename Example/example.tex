@@ -1,23 +1,26 @@
-\documentclass{beamer}
+\documentclass[aspectratio=169]{beamer}
 
 \usetheme{monbs}
 
-\title[Footer - put anything (or nothing) here]{Why is \LaTeX \ Beamer so Powerful?}
-\subtitle{Evidence from Template Customization...}
-\author[Short Author Name]{Author/Presenter Names}
-\institute[Monash Uni]{Department of Banking and Finance, Monash Business School}
+\title[footer text]{Why is \LaTeX \ Beamer so Powerful?}
+\subtitle{Evidence from Template Customization}
+\author{Presenter Name}
+\institute{Department of Banking and Finance, Monash Business School}
 \date{\today}
 
 \begin{document}
 
-\begin{frame}
+{\setbeamertemplate{footline}{}
+\begin{frame}[noframenumbering]
   \titlepage
 \end{frame}
+}
 
-\begin{frame}{Agenda}
+{\setbeamertemplate{footline}{}
+\begin{frame}[noframenumbering]{Agenda}
   \tableofcontents
 \end{frame}
-
+}
 
 \section{Section 1}
 
