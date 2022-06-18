@@ -1,9 +1,9 @@
-\documentclass[aspectratio=169]{beamer}
+\documentclass[aspectratio=149]{beamer}
 
 \usetheme{monbs}
 
 \title[footer text]{Why is \LaTeX \ Beamer so Powerful?}
-\subtitle{Evidence from Template Customization}
+\subtitle{Evidence from Template Customisation}
 \author{Presenter Name}
 \institute{Department of Banking and Finance, Monash Business School}
 \date{\today}
@@ -17,7 +17,8 @@
 }
 
 {\setbeamertemplate{footline}{}
-\begin{frame}[noframenumbering]{Agenda}
+\begin{frame}[t]
+  \centering\vspace{3ex}{\LARGE\textcolor{monashblue}{Agenda}}
   \tableofcontents
 \end{frame}
 }
@@ -60,7 +61,7 @@
 
   \hrulefill
 
-  Regression: (clearly an endogenous setup...)
+  Regression: (clearly an \emph{endogenous} setup...)
   $$ Finance = \beta_0 + \beta_1Asset\ Pricing + \beta_2Corporate\
     Finance + \varepsilon $$
 
